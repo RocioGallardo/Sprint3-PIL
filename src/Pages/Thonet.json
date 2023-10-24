@@ -1,0 +1,58 @@
+{
+  "IniciarSesion": {
+    "GetFieldBy": "xpath",
+    "ValueToFind": "//*[@id='menuUsuarioDiv']/li[2]/a"
+  },
+  "InputEmail": {
+    "GetFieldBy": "id",
+    "ValueToFind": "inputEmail"
+  },
+  "InputPassword": {
+    "GetFieldBy": "id",
+    "ValueToFind": "inputPassword"
+  },
+  "BtnIngresar": {
+    "GetFieldBy": "css",
+    "ValueToFind": "button[type='submit']"
+  },
+  "InputBuscador": {
+	"GetFieldBy": "id",
+	"ValueToFind": "buscador_buscar"
+  },
+  "BtnBuscador": {
+	"GetFieldBy": "id",
+	"ValueToFind": "buscador_submit"
+  },
+  "TxtResultado": {
+	  "GetFieldBy": "xpath",
+	  "ValueToFind": "//*[@id='contenido']/div[1]/div[1]/ul/li[3]"
+  },
+  "TxtSinResultados":{
+	  "GetFieldBy": "xpath",
+	  "ValueToFind": "/html/body/div[5]/div/div[1]"
+  },
+  "PrimerProducto": {
+	  "GetFieldBy": "xpath",
+	  "ValueToFind": "//*[@id='contenido']/div[1]/div[2]/div[2]/div/ul/li[1]/div/a"
+  },
+  "TxtNombreProducto": {
+	  "GetFieldBy": "class",
+	  "ValueToFind": "item-title"
+  },
+  "BtnAgregarAlCarrito":{
+	  "GetFieldBy": "id",
+	  "ValueToFind": "argregarAlCarrito"
+  },
+  "TxtTituloProductoEnCarrito": {
+	  "GetFieldBy": "xpath",
+	  "ValueToFind" : "//*[@id='carritoContainer']/div[2]/div[1]/div/div[2]/div[1]/a"
+  },
+  "BtnEliminarDelCarrito": {
+	  "GetFieldBy": "class",
+	  "ValueToFind": "cart-btn-delete"
+  },
+  "TxtCarritoVacio":{
+	  "GetFieldBy": "class",
+	  "ValueToFind": "cart-empty"
+  }
+}

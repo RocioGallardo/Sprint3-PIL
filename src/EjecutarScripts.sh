@@ -5,4 +5,4 @@ PYTHON3_EXECUTABLE=/Library/Frameworks/Python.framework/Versions/3.11/bin/python
 
 # ##############TEST PATH #############
 cd ./Tests
-$PYTHON3_EXECUTABLE -m pytest tst_1048.py  --html=../Results/GallardoRocio.html --self-contained-html
+$PYTHON3_EXECUTABLE -m pytest tst_1048.py tst_1049.py tst_1050.py  --html=../Results/GallardoRocio.html --self-contained-html

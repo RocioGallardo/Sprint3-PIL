@@ -1,10 +1,23 @@
 import json
 import pytest
+
+#import os
 from selenium import webdriver
+#from selenium.webdriver.support.ui import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, UnexpectedAlertPresentException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
+#from selenium.webdriver.common.keys import Keys
+#from selenium.webdriver.support.ui import Select
+#from selenium.webdriver.support.ui import WebDriverWait
+#import string
+
+#import unittest
+
+#from test.test_tomllib.test_data import json_path
 from src.Functions.Inicializar import Inicializar
+
 
 class Functions(Inicializar):
     def abrir_navegador(self, URL=Inicializar.URL, navegador=Inicializar.NAVEGADOR):
@@ -62,6 +75,7 @@ class Functions(Inicializar):
                 if self.json_GetFieldBy.lower() == "class":
                     elements = self.driver.find_element(By.CLASS_NAME, self.json_ValueToFind)
 
+                print("get_elements: " + self.json_ValueToFind)
                 return elements
             except AttributeError:
                 self.msj = ("get_elements AttributeError: No se encontró el elemento: " + self.json_ValueToFind)
